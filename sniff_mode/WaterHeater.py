@@ -39,7 +39,7 @@ class WashingMode(Observer):
             print("you can wash now.")
 
 
-class DrinkMode(Observer):
+class DrinkingMode(Observer):
 
     def update(self, water_heater):
         if water_heater.get_temperature() >= 100:
@@ -49,7 +49,7 @@ class DrinkMode(Observer):
 def test_water_heater():
     heater = WaterHeater()
     washing_obser = WashingMode()
-    drinking_obser = DrinkMode()
+    drinking_obser = DrinkingMode()
     heater.add_observer(washing_obser)
     heater.add_observer(drinking_obser)
     heater.set_temperature(40)
