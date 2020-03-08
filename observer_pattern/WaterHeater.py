@@ -14,7 +14,7 @@ class WaterHeater:
 
     def set_temperature(self, temperature):
         self.__temperature = temperature
-        print("current temperature is:" + str(self.__temperature) + "C")
+        print("current temperature is:" + str(self.__temperature) + "˚C")
         self.notifies()
 
     def add_observer(self, observer):
