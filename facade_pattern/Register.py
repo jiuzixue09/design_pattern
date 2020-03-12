@@ -29,14 +29,14 @@ class Volunteer:
         self.__register = Register()
         self.__payment = Payment()
         self.__life_center = DormitoryManagementCenter()
-        self.__dormintory = Dormitory()
+        self.__dormitory = Dormitory()
 
     def welcome_freshmen(self, name):
         print('你好，%s 同学！我是新生报到的志愿者%s，我将带你完成整个报到流程。' % (name, self.__name))
         self.__register.register(name)
         self.__payment.pay(name, 1000)
         self.__life_center.provide_living_goods(name)
-        self.__dormintory.meet_roommate(name)
+        self.__dormitory.meet_roommate(name)
 
 
 def test_register():
